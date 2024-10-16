@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Muklis</title>
+</head>
+<body>
+  
+<!-- Latar Penelusuran -->
+<div id="latar-penelusuran" class="latar-penelusuran" style="display:none;">
+    <div class="search-container">
+        <div class="search-wrapper">
+            <span class="close-btn" onclick="closeSearch()">
+                <img src="svg/svg-arow.svg" alt="Close" class="close-icon">
+            </span>
+            <span class="search-src">
+                <input type="search" placeholder="Cari sesuatu...">
+            </span>
+        </div>
+    </div>
+</div>
+
+<!-- latar-penelusuran-transparan -->
+<div id="latar-penelusuran-transparan" class="latar-penelusuran-transparan" style="display:none;"></div>
+
+<!-- Latar Atas -->
+<div class="latar-atas">
+    <!-- Svg garis3 -->
+    <img src="svg/svg-garis3.svg" alt="Deskripsi SVG" class="svg-garis3" width="5vw" height="5vh">
+    
+    <!-- Svg penelusuran -->
+    <img src="svg/svg-src.svg" alt="Deskripsi SVG" class="svg-src" width="5vw" height="5vh" onclick="openSearch()">
+    
+    <!-- Judul -->
+    <h1 class="nick">Muklis</h1>
+</div>
+
+<!-- Latar Tengah -->
+<div class="latar-tengah">
+    <div class="menu">
+        <span id="beranda" class="menu-item active">BERANDA</span>
+        <span id="mengikuti" class="menu-item">MENGIKUTI</span>
+    </div>
+</div>
+
+<!-- bagian video -->
+<input type="file" id="upload-input" accept="video/*" style="display:none;">
+<div id="video-container"></div>
+    
+<!-- Latar menu -->
+<div id="latarmenu" class="latar-menu" style="display:none;">
+    <h4 class="judul1">Muklis</h4>
+    
+    <!-- Svg-komunitas -->
+    <div class="svg-menu-container">
+        <img src="svg/svg-komunitas.svg" alt="Deskripsi SVG" class="svg-menu">
+        <span class="menu-text">Komunitas</span>
+    </div>
+    
+    <!-- Svg-terophy -->
+    <div class="svg-menu-container">
+        <img src="svg/svg-trophy.svg" alt="Deskripsi SVG" class="svg-menu">
+        <span class="menu-text">Terophy</span>
+    </div>
+    
+    <!-- svg-iklan -->
+    <div class="svg-menu-container">
+        <img src="svg/svg-iklan.svg" alt="Deskripsi SVG" class="svg-menu">
+        <span class="menu-text">Iklan</span>
+    </div>
+    
+    <!--Svg donatur -->
+    <div class="svg-menu-container">
+      <img src="svg/svg-donatur.svg" alt="Deskripsi SVG" class="svg-menu"> <span class="menu-text">Donatur</span>
+    </div>
+    
+    <!--Svg shop -->
+    <div class="svg-menu-container">
+      <img src="svg/svg-shop.svg" alt="Deskripsi SVG" class="svg-menu"> <span class="menu-text">Shop</span>
+    </div>
+    
+    <!--Svg pengaturan -->
+    <div class="svg-menu-container">
+      <img src="svg/svg-pengaturan.svg" alt="Deskripsi SVG" class="svg-menu"> <span class="menu-text">Pengaturan</span>
+    </div>
+    
+    <!--Svg peraturan -->
+    <div class="svg-menu-container">
+      <img src="svg/svg-peraturan.svg" alt="Deskripsi SVG" class="svg-menu"> <span class="menu-text">Peraturan</span>
+    </div>
+    
+    <!--Svg profil -->
+    <div class="svg-menu-container">
+      <img src="svg/svg-profil.svg" alt="Deskripsi SVG" class="svg-menu"> <span class="menu-text">Profil</span>
+    </div>
+</div>
+<div id="latar-transparan" class="latar-transparan" style="display:none;"></div>
+
+<!-- latar-bawah -->
+<div class="latar-bawah">
+    <!-- svg home -->
+    <img src="svg/svg-home.svg" alt="Deskripsi SVG" id="svg-home">
+
+    <!-- svg trending -->
+    <img src="svg/svg-trending.svg" alt="Deskripsi SVG" id="svg-trending">
+
+    <!-- svg unggah -->
+    <img src="svg/unggah.svg" alt="Deskripsi SVG" class="unggah">
+
+    <!-- svg email -->
+    <img src="svg/svg-email.svg" alt="Deskripsi SVG" id="svg-email">
+
+    <!-- svg profil -->
+    <img src="svg/svg-profil.svg" alt="Deskripsi SVG" id="svg-profil">
+</div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
